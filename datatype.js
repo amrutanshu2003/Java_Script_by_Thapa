@@ -59,7 +59,22 @@ console.log(`the type of b is:${typeof b}`);
 var c=parseFloat(a);
 console.log(`the value of c is :${c}`);
 console.log(`the type of c is:${typeof c}`);    
-
+var d=("123");//output will be 123 because parseInt will convert the string to number and ignore the leading and trailing spaces
+console.log(parseInt(d));
+var e=(" 123");//output will be 123 because parseInt will convert the string to number and ignore the leading and trailing spaces
+console.log(parseInt(e));
+var f=("0123");//output will be 123 because parseInt will convert the string to number and ignore the leading and trailing spaces and leading zero will be ignored
+console.log(parseInt(f));
+var g=("1.23");//output will be 1 because parseInt will convert the string to number and ignore the leading and trailing spaces and decimal part will be ignored
+console.log(parseInt(g));
+var h=("123",10);//output 10 
+console.log(parseInt(h));
+var i=("&12");
+console.log(parseInt(i));
+var j=("-123");
+console.log(parseInt(j));
+var k=("jfhjg");
+console.log(parseInt(k));
 
 //2. Non-Primitive Data Types
 //a.Object
